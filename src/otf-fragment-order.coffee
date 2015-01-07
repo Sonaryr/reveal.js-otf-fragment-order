@@ -6,12 +6,13 @@ showFragment = (event) ->
     currentSlide = Reveal.getCurrentSlide()
     fragment = currentSlide.querySelector ".fragment[data-otf-fragment-order-index=\"#{index}\"]"
 
-    if fragment.className.indexOf('visible') is -1
+    if fragment?.className.indexOf('visible') is -1
       CURRENT_INDEX++
       otherFragment = currentSlide.querySelector ".fragment[data-fragment-index=\"#{CURRENT_INDEX}\"]"
-      otherFragment.setAttribute 'data-fragment-index', fragment.getAttribute('data-fragment-index')
-      fragment.setAttribute 'data-fragment-index', CURRENT_INDEX
-      Reveal.nextFragment()
+      if otherFragment?
+        otherFragment.setAttribute 'data-fragment-index', fragment.getAttribute('data-fragment-index')
+        fragment.setAttribute 'data-fragment-index', CURRENT_INDEX
+        Reveal.nextFragment()
 
 toggleKeyListener = ->
   currentSlide = Reveal.getCurrentSlide()
