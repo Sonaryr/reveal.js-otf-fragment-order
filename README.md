@@ -1,5 +1,5 @@
 # reveal.js - On-the-fly fragment order
-This is a plugin make the order in which the fragments trigger dynamic.
+This is a plugin that makes the order in which the fragments trigger dynamic.
 
 An ideal situation where this can be used is with a question you ask your audience and they don't answer in the order you programmed your list.
 
@@ -41,7 +41,7 @@ And the last thing to do is to add a data attribute to your slide.
 	</ul>
 </section>
 ```
-That all for installation
+That's all for installation
 
 ##Usage in presentation
 On this slide when they tell you Grumpy now, you are prepared!
