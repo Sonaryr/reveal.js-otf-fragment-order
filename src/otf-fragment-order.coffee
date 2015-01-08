@@ -1,3 +1,10 @@
+###
+  otf-fragment-order.coffee
+  http://www.waxam.be
+  MIT Licensed
+
+  Copyright (C) 2015 Maarten Schroeven <maarten@waxam.be>
+###
 CURRENT_INDEX = -1
 showFragment = (event) ->
   if 48 <= event.keyCode <= 57
